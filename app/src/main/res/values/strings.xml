@@ -1,0 +1,32 @@
+<resources>
+    <!-- App Name -->
+    <string name="app_name">Car Diagnosis</string>
+
+    <!-- Button Labels -->
+    <string name="add_appointment">Add Appointment</string>
+    <string name="view_appointments">View Appointments</string>
+    <string name="create_report">Create Report</string>
+    <string name="save">Save Appointment</string>
+
+    <!-- Input Prompts -->
+    <string name="date_prompt">Enter Date (YYYY-MM-DD)</string>
+    <string name="hour_prompt">Enter Hour (HH:MM)</string>
+    <string name="vehicle_make_prompt">Enter Vehicle Make</string>
+    <string name="model_prompt">Enter Vehicle Model</string>
+    <string name="year_prompt">Enter Vehicle Year</string>
+    <string name="plate_prompt">Enter Plate Number</string>
+    <string name="client_name_prompt">Enter Client Name</string>
+    <string name="client_id_prompt">Enter Client ID</string>
+    <string name="plan_prompt">Select a Plan</string>
+
+    <!-- Spinner Options -->
+    <string-array name="plan_options">
+        <item>Plan 1</item>
+        <item>Plan 2</item>
+        <item>Plan 3</item>
+    </string-array>
+
+    <!-- Toast Messages -->
+    <string name="appointment_saved">Appointment Saved Successfully!</string>
+</resources>
+
