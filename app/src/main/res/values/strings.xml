@@ -28,5 +28,141 @@
 
     <!-- Toast Messages -->
     <string name="appointment_saved">Appointment Saved Successfully!</string>
+
+    <string-array name="color_options">
+        <item>Verde</item>
+        <item>Amarillo</item>
+        <item>Rojo</item>
+    </string-array>
+
+   <string-array name="sheet_options">
+    <item>INSPECCION VISUAL INICIAL</item>
+    <item>PLAN Nro 1</item>
+    <item>PLAN Nro 2</item>
+    <item>PLAN Nro 3</item>
+</string-array>
+
+    <string-array name="categories_initial">
+        <item>Estado placas / matricula vehiculo</item>
+        <item>Estado retrovisores</item>
+        <item>Parabrisas delantero trasero y laterales</item>
+        <item>Limpia-parabrisas</item>
+        <item>Abolladuras / estado de la pintura</item>
+        <item>Cerradura puertas</item>
+        <item>Rueda repuesto</item>
+        <item>Piso del vehiculo</item>
+        <item>Parachoques delantero</item>
+        <item>Parachoques trasero</item>
+        <item>Estado de la tapiceria delantera</item>
+        <item>Estado tapiceria trasera</item>
+        <item>Estado tapiceria baul maletero</item>
+        <item>Cinturones de seguridad: delanteros y traseros</item>
+        <item>Retrovisor interno</item>
+        <item>Parasoles</item>
+        <item>Iluminacion interna</item>
+        <item>Bocina</item>
+        <item>Extintor</item>
+        <item>Triangulo de seguridad / Chaleco</item>
+        <item>Tapa tanque combustible</item>
+        <item>Gato recambio ruedas</item>
+        <item>Herramienta para tuercas ruedas</item>
+        <item>Numero VIN</item>
+        <item>A/C funcionamiento</item>
+    </string-array>
+
+    <string-array name="categories_plan1">
+        <item>Calibración del aire de los neumáticos</item>
+        <item>Desviación y alineación al paso</item>
+        <item>Prueba en equipo</item>
+        <item>Juego excesivo en el volante</item>
+        <item>Estado físico volante</item>
+        <item>Fluido de la Bomba y ruido de la bomba</item>
+        <item>Sistema de suspensión</item>
+        <item>Banco de suspensión</item>
+        <item>Estado amortiguadores</item>
+        <item>Estado resortes</item>
+        <item>Estado ballestas</item>
+        <item>Estado Barra de torsión</item>
+        <item>Peso del Vehículo</item>
+        <item>Sistema de frenos</item>
+        <item>Banco de frenos</item>
+        <item>Frenada Rueda delantera derecha</item>
+        <item>Frenada Rueda delantera izquierda</item>
+        <item>Diferencia entre ruedas eje delantero</item>
+        <item>Frenada Rueda trasera derecha</item>
+        <item>Frenada Rueda trasera izquierda</item>
+        <item>Diferencia entre ruedas eje trasero</item>
+        <item>Freno de mano</item>
+        <item>Alabeo y Ovalidad freno delantero derecho</item>
+        <item>Alabeo y Ovalidad freno delantero izquierdo</item>
+        <item>Alabeo y Ovalidad freno trasero derecho</item>
+        <item>Alabeo y Ovalidad freno trasero izquierdo</item>
+        <item>Verificación neumático y Rin</item>
+        <item>Medición de huella del neumático</item>
+        <item>Desgaste desigual (mala alineación)</item>
+        <item>Golpes o Roturas en el RIN</item>
+        <item>Faltante de pernos y/o Tuercas</item>
+        <item>Existencia Rueda de Repuesto</item>
+        <item>Nivel aceite de motor</item>
+        <item>Existencia y estado de varilla de medición</item>
+        <item>Existencia de tapa de aceite</item>
+        <item>Nivel aceite de caja (donde proceda)</item>
+        <item>Existencia y estado de varilla de medición</item>
+        <item>Nivel aceite de dirección hidráulica</item>
+        <item>Calidad fluido dirección hidráulica</item>
+        <item>Nivel Refrigerante</item>
+        <item>Calidad fluido Refrigerante</item>
+        <item>Estado de la tapa del Radiador</item>
+        <item>Nivel líquido limpia parabrisas</item>
+        <item>Nivel Liga de Frenos</item>
+        <item>Medición humedad/calidad liga de frenos</item>
+    </string-array>
+
+    <string-array name="categories_plan2">
+        <item>Estado Bateria: Bornes + cables</item>
+        <item>Vida de la bateria</item>
+        <item>Sistema de arranque</item>
+        <item>Sistema de carga</item>
+        <item>Códigos de falla motor</item>
+        <item>Emisión gases de escape motores gasolina</item>
+        <item>Hidrocarburo (HC)</item>
+        <item>Monóxido de Carbono (CO)</item>
+        <item>Dióxido de Carbono (CO2)</item>
+        <item>Oxígeno (O2)</item>
+        <item>Óxido Nitroso (Nox)</item>
+        <item>Emisión gases de escape Diesel</item>
+        <item>Opacidad</item>
+        <item>Coeficiente de absorción (K)</item>
+        <item>Sistema de Iluminación</item>
+        <item>Altura de faros delanteros</item>
+        <item>Luces bajas: delantero derecho</item>
+        <item>Luces bajas: delantero izquierdo</item>
+        <item>Luces altas: delantero derecho</item>
+        <item>Luces altas: delantero izquierdo</item>
+        <item>Color adecuado luces delanteras</item>
+        <item>Luces Intermitentes</item>
+        <item>Luces de cruce</item>
+        <item>Cambio de luces alta/baja</item>
+        <item>Luces de stop</item>
+        <item>Luces panel</item>
+    </string-array>
+
+    <string-array name="categories_plan3">
+        <item>Detección Holguras</item>
+        <item>Tren delantero</item>
+        <item>Holguras suspensión Trasera</item>
+        <item>Fugas sistema de escape: silenciador y catalizador</item>
+        <item>Fugas aceite motor</item>
+        <item>Fugas caja/Transmisión</item>
+        <item>Fugas sistema de frenos</item>
+        <item>Fugas combustible</item>
+        <item>Fugas Refrigerante</item>
+        <item>Verificación fugas de vacío en el motor mediante generador de humo</item>
+        <item>Estado del chasis sujeción</item>
+    </string-array>
+
+
+
+
 </resources>
 

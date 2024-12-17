@@ -81,7 +81,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         List<String> appointments = new ArrayList<>();
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.query(TABLE_NAME,
-                new String[]{COLUMN_DATE, COLUMN_HOUR, COLUMN_CLIENT_NAME, COLUMN_VEHICLE_MAKE, COLUMN_MODEL},
+                new String[]{COLUMN_DATE, COLUMN_HOUR, COLUMN_CLIENT_NAME, COLUMN_VEHICLE_MAKE, COLUMN_MODEL, COLUMN_PLAN},
                 null, null, null, null, COLUMN_DATE + ", " + COLUMN_HOUR);
 
         if (cursor != null) {
@@ -91,8 +91,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 String clientName = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_CLIENT_NAME));
                 String vehicleMake = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_VEHICLE_MAKE));
                 String model = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_MODEL));
+                String plan = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_PLAN));
 
-                String appointment = "Date: " +date + "\n" + "Hour: " + hour + "\n" + "Client: " + clientName + "\n" + "Make: " + vehicleMake + "\n" + "Model: " + model;
+
+                String appointment = "Date: " +date + "\n" + "Hour: " + hour + "\n" + plan + "\n" + "Client: " + clientName + "\n" + "Make: " + vehicleMake + "\n" + "Model: " + model;
 
                 appointments.add(appointment);
             }

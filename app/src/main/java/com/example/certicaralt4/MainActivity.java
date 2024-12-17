@@ -29,8 +29,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.btnCreateReport).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Future feature
-            }
+                startActivity(new Intent(MainActivity.this, CreateReportActivity.class));            }
         });
     }
 }
