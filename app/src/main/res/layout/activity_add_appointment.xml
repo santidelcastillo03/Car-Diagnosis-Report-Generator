@@ -9,11 +9,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <EditText
-            android:id="@+id/etDate"
+        <TextView
+            android:id="@+id/tvDate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Date (YYYY-MM-DD)" />
+            android:hint="Select Date"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:background="@drawable/rounded_border"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:focusable="true"
+            android:clickable="true" />
+
 
         <EditText
             android:id="@+id/etHour"

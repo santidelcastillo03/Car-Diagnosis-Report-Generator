@@ -1,12 +1,10 @@
 package com.example.certicaralt4;
 
 import android.content.Intent;
-import android.content.res.AssetManager;
-import android.graphics.Canvas;
-import android.graphics.Paint;
+import android.content.res.AssetManager;;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.Environment;
+
 import android.util.Log;
 import android.view.View;
 import android.widget.*;
@@ -22,23 +20,7 @@ import com.journeyapps.barcodescanner.BarcodeEncoder;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-import com.itextpdf.io.image.ImageData;
-import com.itextpdf.io.image.ImageDataFactory;
-import com.itextpdf.kernel.pdf.PdfDocument;
-import com.itextpdf.kernel.pdf.PdfWriter;
-import com.itextpdf.layout.Document;
-import com.itextpdf.layout.element.Image;
-import com.itextpdf.layout.element.Paragraph;
 import android.graphics.Bitmap;
-import com.itextpdf.layout.element.Table;
-import com.itextpdf.layout.element.Cell;
-import android.graphics.Color;
-
-import org.apache.poi.ss.usermodel.WorkbookFactory;
-import com.itextpdf.kernel.geom.PageSize;
-import com.itextpdf.layout.element.AreaBreak;
-
-
 
 import java.io.*;
 
