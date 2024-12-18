@@ -1,6 +1,6 @@
 <resources>
     <!-- App Name -->
-    <string name="app_name">Car Diagnosis</string>
+    <string name="app_name">CertiCarApp</string>
 
     <!-- Button Labels -->
     <string name="add_appointment">Add Appointment</string>

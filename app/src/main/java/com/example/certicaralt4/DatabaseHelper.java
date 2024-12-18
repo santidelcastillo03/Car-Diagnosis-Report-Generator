@@ -77,15 +77,21 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         }
     }
 
-    public List<String> getAppointments() {
+    public List<String> getAppointments(List<Integer> ids) {
         List<String> appointments = new ArrayList<>();
         SQLiteDatabase db = this.getReadableDatabase();
-        Cursor cursor = db.query(TABLE_NAME,
-                new String[]{COLUMN_DATE, COLUMN_HOUR, COLUMN_CLIENT_NAME, COLUMN_VEHICLE_MAKE, COLUMN_MODEL, COLUMN_PLAN},
-                null, null, null, null, COLUMN_DATE + ", " + COLUMN_HOUR);
+
+        // Fetch appointments ordered by date and hour
+        Cursor cursor = db.query(
+                TABLE_NAME,
+                new String[]{COLUMN_ID, COLUMN_DATE, COLUMN_HOUR, COLUMN_CLIENT_NAME, COLUMN_VEHICLE_MAKE, COLUMN_MODEL, COLUMN_PLAN},
+                null, null, null, null,
+                COLUMN_DATE + " ASC, time(" + COLUMN_HOUR + ") ASC" // Ensure hour is treated as time
+        );
 
         if (cursor != null) {
             while (cursor.moveToNext()) {
+                int id = cursor.getInt(cursor.getColumnIndexOrThrow(COLUMN_ID));
                 String date = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_DATE));
                 String hour = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_HOUR));
                 String clientName = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_CLIENT_NAME));
@@ -93,14 +99,28 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 String model = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_MODEL));
                 String plan = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_PLAN));
 
-
-                String appointment = "Date: " +date + "\n" + "Hour: " + hour + "\n" + plan + "\n" + "Client: " + clientName + "\n" + "Make: " + vehicleMake + "\n" + "Model: " + model;
+                String appointment = "Date: " + date + "\nHour: " + hour + "\n" + plan +
+                        "\nClient: " + clientName + "\nMake: " + vehicleMake + "\nModel: " + model;
 
                 appointments.add(appointment);
+                ids.add(id); // Save the ID for tracking
             }
             cursor.close();
         }
         return appointments;
     }
+
+
+
+    public void deleteAppointment(int id) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        int rowsDeleted = db.delete(TABLE_NAME, COLUMN_ID + " = ?", new String[]{String.valueOf(id)});
+        if (rowsDeleted > 0) {
+            Log.d("DB_SUCCESS", "Appointment deleted with ID: " + id);
+        } else {
+            Log.e("DB_ERROR", "Failed to delete appointment with ID: " + id);
+        }
+    }
+
 }
 
